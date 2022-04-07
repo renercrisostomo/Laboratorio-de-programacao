@@ -18,18 +18,18 @@ Octal: 12
 
 **Questão 3**
 
- Fa ̧ca um programa capaz de ler um valor real e escrevˆe-lo com apenas uma casa decimal.
+ Faca um programa capaz de ler um valor real e escreve-lo com apenas uma casa decimal.
 
 **Questão 4**
 
- Sabendo que os argumentos da fun ̧c ̃ao ”printf”podem ser express ̃oes (a+b, a/b, a*b...), e n ̃ao somente
-argumentos, fa ̧ca um programa capaz de ler um valor inteiro X e escrever seu triplo, seu quadrado, e
+ Sabendo que os argumentos da funcao "printf" podem ser expressoes (a+b, a/b, a*b...), e nao somente
+argumentos, faca um programa capaz de ler um valor inteiro X e escrever seu triplo, seu quadrado, e
 seu meio.
 
 **Questão 5**
 
  Escreva um programa que pegue o valor de uma conta de restaurante e imprima o valor total a ser
-pago, considerando que o restaurante cobra 10% de taxa para o gar ̧com.
+pago, considerando que o restaurante cobra 10% de taxa para o garcom.
 
 **Questão 6**
 

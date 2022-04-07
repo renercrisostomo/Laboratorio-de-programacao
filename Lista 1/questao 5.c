@@ -1,5 +1,5 @@
 /*
-Questão 5
+**Questão 5**
 
  Escreva um programa que pegue o valor de uma conta de restaurante e imprima o valor total a ser
 pago, considerando que o restaurante cobra 10% de taxa para o garcom.
