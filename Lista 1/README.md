@@ -111,5 +111,62 @@ Nao utilize estrutura de decisao `if`.
 e sua ́area. Use o valor de 3,14159 para "pi". Faca cada um destes calculos dentro da instrucoes (ou
 instrucoes) `printf` e use o especificador de conversao `%f`.
 
+**Questão 19**
 
-[...]
+ Escreva um programa que imprima um retangulo, uma elipse, uma seta e um losango como se segue:
+
+ ```
+ ********     ***       *         *
+ *      *    *   *     ***       * *
+ *      *   *     *   *****     *   *
+ *      *   *     *     *      *     *
+ *      *   *     *     *     *       *
+ *      *   *     *     *      *     *
+ *      *   *     *     *       *   *
+ *      *    *   *      *        * *
+ ********     ***       *         *
+ ```
+
+**Questão 20**
+
+ Escreva um programa que receba um numero inteiro e entao determine e imprima se ele ́e par ou ́ımpar.
+Obs.: Nao utilizar estrutura de decisao `if`.
+
+**Questão 21**
+
+ Escreva um programa que leia dois inteiros e entao determine e imprima se o primeiro ́e multiplo do
+segundo. Obs.: Nao utilizar estrutura de decisao `if`.
+
+**Questão 22**
+
+ A linguagem C pode representar letras maiusculas, letras minusculas e uma grande variedade de
+sımbolos especiais. O C usa internamente pequenos inteiros para representar cada caractere diferente.
+
+O conjunto de caracteres que um computador utiliza e as representacoes dos numeros inteiros correspondentes aqueles caracteres ́e chamado conjunto de caracteres do computador. Voce pode imprimir o numero inteiro equivalente a letra maiuscula A, por exemplo, executando a instrucao
+
+`printf("%d", 'A');`
+
+Escreva um programa em C que imprima os inteiros equivalentes a algumas letras maiusculas, letras
+minusculas e sımbolos especiais. No minimo, determine os numeros inteiros equivalentes ao conjunto
+seguinte: A BCabc 0 12 $ * + / e o caractere espaco em branco.
+
+**Questão 23**
+
+ Escreva um programa que receba a entrada de um numero de tres digitos, separe o numero em seus digitos componentes e reconstrua um numero com os componentes na ordem inversa. Exemplo: para entrada de 123, a resposta do programa seria 321.
+
+**Questão 24**
+
+ Escreva um programa que calcule o produto entre um valor dado x por 2 elevado a um valor dado n.
+Obs.: Utilize operadores binarios.
+
+**Questão 25**
+
+ Escreva um programa que leia um tempo em segundos e imprima quantas horas, minutos e segundos ha neste tempo.
+
+**Questão 26**
+
+ Fazer um programa para ler as coordenadas x e y de dois pontos e calcular a distancia entre os dois pontos no plano. (Utilize a funcao `sqrt (numero)`, biblioteca math.h).
+
+**Questão 27**
+
+ Escreva um programa que solicite 3 numeros em ponto flutuante e imprima a media aritmetica e geometrica. (Utilize a funcao `pow(base, expoente)` da biblioteca math.h).
