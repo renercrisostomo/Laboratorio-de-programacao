@@ -6,7 +6,9 @@
 de x depois que cada instrucao for executada.
 
 • `x = 7 + 3 * 6 / 2 - l`
+
 • `x = 2 % 2 + 2 * 2 - 2 / 2`
+
 • `x = (3 * 9 * (3 + (9 * 3 / (3) ) ) )`
 
 **Questão 2**
