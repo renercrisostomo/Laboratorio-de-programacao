@@ -2,11 +2,12 @@
 
 **Questão 1**
 
- Diga a ordem de c ́alculo dos operadores em cada uma das instru ̧c ̃oes em C a seguir e mostre o valor
-de x depois que cada instru ̧c ̃ao for executada.
-• x = 7 + 3*6/2-l
-• x = 2%2 + 2*2-2/2;
-• x = (3 * 9 * (3 + (9*3/ (3) ) ) );
+ Diga a ordem de calculo dos operadores em cada uma das instrucoes em C a seguir e mostre o valor
+de x depois que cada instrucao for executada.
+
+• `x = 7 + 3 * 6 / 2 - l`
+• `x = 2 % 2 + 2 * 2 - 2 / 2`
+• `x = (3 * 9 * (3 + (9 * 3 / (3) ) ) )`
 
 **Questão 2**
 
@@ -34,13 +35,14 @@ pago, considerando que o restaurante cobra 10% de taxa para o garcom.
 **Questão 6**
 
  Fazer um programa para ler a altura (em metros) e o sexo de uma pessoa e calcular o seu peso ideal
-atrav ́es da seguinte f ́ormula:
-para homens: 72.7 * altura - 58
-para mulheres: 62.1 * altura - 44.7
+atraves da seguinte formula:
+
+- para homens: `72.7 * altura - 58`
+- para mulheres: `62.1 * altura - 44.7`
 
 **Questão 7**
 
- Fa ̧ca um programa que leia uma quantidade de horas, minutos e segundos e imprima o total de segundos.
+ Faca um programa que leia uma quantidade de horas, minutos e segundos e imprima o total de segundos.
 
 **Questão 8**
 
