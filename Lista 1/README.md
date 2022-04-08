@@ -107,7 +107,7 @@ Nao utilize estrutura de decisao `if`.
 
 **Questão 18**
 
- Escreva um programa que leia o raio de um ́ırculo e imprima seu diametro, o valor de sua circunferencia
+ Escreva um programa que leia o raio de um circulo e imprima seu diametro, o valor de sua circunferencia
 e sua ́area. Use o valor de 3,14159 para "pi". Faca cada um destes calculos dentro da instrucoes (ou
 instrucoes) `printf` e use o especificador de conversao `%f`.
 
