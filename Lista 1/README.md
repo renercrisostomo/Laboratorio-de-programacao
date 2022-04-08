@@ -25,7 +25,7 @@ Octal: 12
 
 **Questão 4**
 
- Sabendo que os argumentos da funcao "printf" podem ser expressoes (a+b, a/b, a*b...), e nao somente
+ Sabendo que os argumentos da funcao `printf` podem ser expressoes (`a+b`, `a/b`, `a*b`...), e nao somente
 argumentos, faca um programa capaz de ler um valor inteiro X e escrever seu triplo, seu quadrado, e
 seu meio.
 
