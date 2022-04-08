@@ -88,7 +88,7 @@ temperatura em Celsius.
 
  Uma empresa contrata um vendedor a R$ 50,25 por dia. Crie um programa que solicite o numero de
 dias trabalhados pelo vendedor e imprima o valor lıquido a ser pago ao mesmo, sabendo que se ele
-trabalhou at ́e 10 dias nao tem direito a gratificacao, se ele trabalhou acima de 10 dias e ate 20 dias
+trabalhou ate 10 dias nao tem direito a gratificacao, se ele trabalhou acima de 10 dias e ate 20 dias
 tem direito a gratificacao de 20%, se ele trabalhou acima de 20 dias tem direito a gratificacao de 30%.
 Sempre sao descontados 10% de imposto de renda em cima do valor bruto.
 
@@ -96,7 +96,7 @@ Sempre sao descontados 10% de imposto de renda em cima do valor bruto.
 
  Desenvolva um programa que calcule o salario liquido de um professor. Para elaborar o programa, ́e
 necessario possuir alguns dados, tais como o valor da hora aula, numero de horas trabalhadas no mes e
-percentual de desconto do INSS. Em primeiro lugar, deve-se estabelecer o seu sal ́ario bruto para fazer
+percentual de desconto do INSS. Em primeiro lugar, deve-se estabelecer o seu salario bruto para fazer
 o desconto e ter o valor do salario liquido. Obs.: o programa deve informar o salario bruto e salario
 liquido do professor.
 
@@ -108,7 +108,7 @@ Nao utilize estrutura de decisao `if`.
 **Questão 18**
 
  Escreva um programa que leia o raio de um ́ırculo e imprima seu diametro, o valor de sua circunferencia
-e sua  ́area. Use o valor de 3,14159 para "pi". Faca cada um destes calculos dentro da instrucoes (ou
+e sua ́area. Use o valor de 3,14159 para "pi". Faca cada um destes calculos dentro da instrucoes (ou
 instrucoes) `printf` e use o especificador de conversao `%f`.
 
 
