@@ -112,7 +112,7 @@ algarismos 7.
 
 **Questão 23**
 Escreva um programa que mostre a diferença entre pré-incrementar e pós-incrementar usando o ope-
-rador –.
+rador `–`.
 
 **Questão 24**
 Um triângulo retângulo pode ter lados que são valores inteiros. O conjunto de três valores inteiros para
@@ -144,6 +144,6 @@ produto do maior pelo menor número apresentado. (Obs.: Não utilize vetores.) A
 do laço é o usuário digitar um número negativo e par.
 
 **Questão 28**
-Escreva um programa que receba dois valores numéricos X e Y (unsigned char ) e esconda todos os bits
+Escreva um programa que receba dois valores numéricos X e Y (`unsigned char`) e esconda todos os bits
 de X em cada um dos bits menos significativos dos 4 elementos imediatamente anteriores e posteriores
 a Y. (Obs.: Não utilizar valores para Y menores que 5).

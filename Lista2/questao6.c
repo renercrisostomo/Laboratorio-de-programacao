@@ -8,49 +8,85 @@ do seu voto. No final da eleição o programa deve emitir um relatório contendo
 votação de cada candidato, votos em branco, votos nulos e o candidato eleito. Obs.: O código para
 finalizar a urna (votação) é o usuário digitar algum número negativo.
 */
+/* Código desenvolvido em sala de aula. Em caso de bugs, favor comentar na devida atividade no classroom */
+
+// Adicionei o código que mostra o candidato eleito. -- Rener
+
+
 #include <stdio.h>
+#include <stdlib.h>
+
+void imprimirRelatorio(int, int, int, int);
 
 int main(){
-    int candidato, votos[5], votos_brancos, votos_nulos, votos_totais, i;
-    float porcentagem_votos[5];
-    
-    for(i=0; i<5; i++){
-        votos[i] = 0;
-    }
-    
-    votos_brancos = 0;
-    votos_nulos = 0;
-    votos_totais = 0;
-    
-    do{
-        printf("Digite o numero do candidato: ");
-        scanf("%d", &candidato);
-        
-        if(candidato == 0){
-            votos_brancos++;
-        }
-        else if(candidato < 0){
-            break;
-        }
-        else if(candidato > 0 && candidato < 8){
-            votos[candidato-1]++;
-        }
-        else{
-            votos_nulos++;
-        }
-        
-        votos_totais++;
-    }while(candidato != 0);
-    
-    for(i=0; i<5; i++){
-        porcentagem_votos[i] = (votos[i]*100)/votos_totais;
-    }
-    
-    printf("\n\nRelatorio da eleicao\n");
-    printf("\nCandidato\tVotos\tPorcentagem\n");
-    printf("\n1\t\t%d\t%.2f%%\n", votos[0], porcentagem_votos[0]);
-    printf("\n2\t\t%d\t%.2f%%\n", votos[1], porcentagem_votos[1]);
-    printf("\n3\t\t%d\t%.2f%%\n", votos[2], porcentagem_votos[2]);
-    printf("\n4\t\t%d\t%.2f%%\n", votos[3], porcentagem_votos[3]);
+    int voto;
+    int paulo=0, renata=0, branco=0, nulo=0;
+    char c;
 
+    do{
+        system("clear"); // Reduz a portabilidade do código.     
+        puts("Olá eleitor, seja bem-vindo. Digite seu voto ou se preferir, um número negativo para sair: ");
+        puts("5. Paulo");
+        puts("7. Renata");
+        puts("0. Branco");
+
+        scanf("%d",&voto);
+        getchar(); 
+
+        puts("Confirmar? s: sim | outra tecla: não");
+        c = getchar();
+
+        if (c != 's') continue; // Você poderia usar if (c != 's') e envolver todo o switch
+
+        switch (voto){
+
+            case 0: // Para votos "branco"
+                branco++; //branco += 1; branco=branco+1;
+                break;
+            case 5: // Para votos "Paulo"
+                paulo++;
+                break;
+            case 7: // Para votos "Renata"
+                renata++;
+                break;
+            default: // Valores diferentes 
+                // if (voto>0) nulo++;
+                nulo += (voto>0)?1:0;
+        }
+       
+    } while (voto >= 0);
+
+    // Imprimir a quantidade de votos
+    printf("Resultado da eleição\n");
+    printf("Quantidade de votos\n");
+    printf("\t 5. Paulo: %d\n",paulo);
+    printf("\t 7. Renata: %d\n",renata);
+    printf("\t 0. Brancos: %d\n",branco);
+    printf("\t Nulos: %d\n",nulo);
+
+    // Relatorio
+    imprimirRelatorio(paulo, renata, branco, nulo);
+
+    return 0;
+}
+
+
+void imprimirRelatorio(int p, int r, int b, int n){
+    int totalVotos = p + r + b + n;
+    float pp, pr, pb, pn;
+
+    pp = ( ( (float) p )/totalVotos) * 100;
+    pr = ( ( (float) r )/totalVotos) * 100;
+    pb = ( ( (float) b )/totalVotos) * 100;
+    pn = ( ( (float) n )/totalVotos) * 100;
+
+    puts("-------------");
+    printf("Porcentagem de votos\n");
+    printf("Quantidade de votos\n");
+    printf("\t 5. Paulo: %.2f%%\n",pp);
+    printf("\t 7. Renata: %.2f%%\n",pr);
+    printf("\t 0. Brancos: %.2f%%\n",pb);
+    printf("\t Nulos: %.2f%%\n",pn);
+    puts("-------------");
+    printf("Candidato eleito: %s\n", (p > r) ? "Paulo(5)" : "Renata(7)");
 }
