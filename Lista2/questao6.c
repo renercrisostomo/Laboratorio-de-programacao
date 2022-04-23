@@ -10,8 +10,7 @@ finalizar a urna (votação) é o usuário digitar algum número negativo.
 */
 /* Código desenvolvido em sala de aula. Em caso de bugs, favor comentar na devida atividade no classroom */
 
-// Adicionei o código que mostra o candidato eleito. -- Rener
-
+// Adicionei o código que mostra o candidato eleito. Removi o clear pq causou incompatibilidade -- Rener
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,16 +23,15 @@ int main(){
     char c;
 
     do{
-        system("clear"); // Reduz a portabilidade do código.     
-        puts("Olá eleitor, seja bem-vindo. Digite seu voto ou se preferir, um número negativo para sair: ");
+        puts("Ola eleitor, seja bem-vindo. Digite seu voto ou se preferir, um numero negativo para sair: ");
         puts("5. Paulo");
         puts("7. Renata");
         puts("0. Branco");
 
-        scanf("%d",&voto);
+        scanf("%d", &voto);
         getchar(); 
 
-        puts("Confirmar? s: sim | outra tecla: não");
+        puts("Confirmar? s: sim | outra tecla: nao");
         c = getchar();  
 
         if (c != 's') continue; // Você poderia usar if (c != 's') e envolver todo o switch
@@ -57,7 +55,7 @@ int main(){
     } while (voto >= 0);
 
     // Imprimir a quantidade de votos
-    printf("Resultado da eleição\n");
+    printf("Resultado da eleicao\n");
     printf("Quantidade de votos\n");
     printf("\t 5. Paulo: %d\n",paulo);
     printf("\t 7. Renata: %d\n",renata);
