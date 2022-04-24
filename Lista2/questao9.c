@@ -6,19 +6,15 @@ um algoritmo que gere a série de Fibonacci até o vigésimo termo.
 #include <stdio.h>
 
 int main(){
-    int n, i, a, b, c;
-    printf("Digite um numero: ");
-    scanf("%d", &n);
-    a = 1;
-    b = 1;
-    c = 0;
-    i = 3;
-    while (i <= n){
-        c = a + b;
-        a = b;
-        b = c;
-        i++;
+    int anterior = 1, ultimo = 1, proximo, i;
+    printf("1, 1, ");
+    for(i = 1; i <= 20; i++){
+        proximo = anterior + ultimo;
+        anterior = ultimo;
+        ultimo = proximo;
+        printf("%d,", ultimo);
     }
-    printf("O %d termo da série de Fibonacci e: %d\n", n, c);
+
+    printf("O 20o termo da serie de Fibonacci: %d\n", ultimo);
     return 0;
 }

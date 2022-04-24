@@ -10,9 +10,10 @@ colocam-se quatro grãos (tendo neste momento sete grãos), no quarto quadro col
 #include <stdio.h>
 
 int main(){
-    int i, soma = 0;
-    for(i = 1; i <= 64; i++){
-        soma += i;
+    int i, anterior = 1, soma = 0;
+    for(i = 2; i <= 60; i++){
+        anterior *= 2;
+        soma += anterior;
     }
     printf("Soma dos numeros de grãos de trigo: %d\n", soma);
     return 0;

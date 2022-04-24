@@ -7,10 +7,7 @@ Pedro será maior que José?
 #include <stdio.h>
 
 int main(){
-    int jose, pedro, anos;
-    jose = 150;
-    pedro = 110;
-    anos = 0;
+    int jose = 150, pedro = 110, anos = 0;
 
     while (pedro < jose){
         pedro += 3;
@@ -18,6 +15,6 @@ int main(){
         anos++;
     }
 
-    printf("Pedro sera maior que jose em %d anos\n", anos);
+    printf("%d anos\n", anos);
     return 0;
 }

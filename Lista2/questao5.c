@@ -18,8 +18,8 @@ int main (){
         if (n < menor) menor = n;
         i++;
     }
-    printf("O maior numero digitado foi %d\n", maior);
-    printf("O menor numero digitado foi %d\n", menor);
-    printf("Voce digitou %d numeros\n", i);
+    printf("Maior numero: %d\n", maior);
+    printf("Menor numero: %d\n", menor);
+    printf("Numeros digitados: %d numeros\n", i);
     return 0;
 }

@@ -8,16 +8,14 @@ valor nulo a leitura deve ser repetida.
 #include <stdio.h>
 
 int main (){
-    int n1, n2, resultado;
-    printf("Digite um numero: ");
+    int n1, n2, divisao;
+    printf("Digite o numerador: ");
     scanf("%d", &n1);
-    printf("Digite um numero: ");
-    scanf("%d", &n2);
-    while (n2 == 0){
-        printf("O numero nao pode ser nulo, digite um numero: ");
+    do{
+        printf("Digite um denominador nao nulo: ");
         scanf("%d", &n2);
-    }
-    resultado = n1 / n2;
-    printf("O resultado da divisao e: %d\n", resultado);
+    }while (n2 == 0);
+    divisao = (float)n1 / n2;
+    printf("%d / %d = %d\n", n1, n2, divisao);
     return 0;
 }

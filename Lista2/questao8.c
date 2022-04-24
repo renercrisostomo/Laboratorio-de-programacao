@@ -10,18 +10,13 @@ acordo com as regras acima.
 #include <stdio.h>
 
 int main(){
-    int valor, entrada, prestacao;
+    int valor, entrada, prestacao, diferencaEntradaPrestacao;
     printf("Digite o valor da mercadoria: ");
     scanf("%d", &valor);
-    if (valor % 2 == 0){
-        entrada = valor / 2;
-        prestacao = entrada;
-    }
-    else{
-        entrada = (valor / 2) + 1;
-        prestacao = entrada - 1;
-    }
-    printf("A entrada e: %d\n", entrada);
-    printf("As duas prestacoes sao: %d\n", prestacao);
+    diferencaEntradaPrestacao = valor % 3;
+    prestacao = valor / 3;
+    entrada = prestacao + diferencaEntradaPrestacao;
+    printf("Entrada: %d\n", entrada);
+    printf("Prestacoes: %d\n", prestacao);
     return 0;
 }

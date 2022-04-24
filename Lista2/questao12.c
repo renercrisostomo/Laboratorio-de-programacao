@@ -4,10 +4,9 @@ Elaborar um programa que mostre os resultados da tabuada de um número inteiro q
 deve ser apresentada de acordo com sua forma tradicional.
 */
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(){
-    int numero, i, j;
+    int numero, i;
     printf("Digite um numero: ");
     scanf("%d", &numero);
     for(i = 0; i <= 10; i++){
