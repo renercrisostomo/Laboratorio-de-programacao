@@ -5,6 +5,16 @@ A,B especificada pelo usuário. O programa deve funcionar tanto para A > B quant
 */
 #include <stdio.h>
 
+int somatorio(int inicio, int fim){
+    int cont = 0, i;
+    for(i = inicio; i <= fim; i++){
+        if(i % 3 == 0){
+            cont++;
+        }
+    }
+    return cont;
+}
+
 int main(){
     int a, b, i, cont = 0;
     printf("Digite o valor de A: ");
@@ -12,19 +22,11 @@ int main(){
     printf("Digite o valor de B: ");
     scanf("%d", &b);
     if(a > b){
-        for(i = b; i <= a; i++){
-            if(i % 3 == 0){
-                cont++;
-            }
-        }
+        cont = somatorio(b, a);
     }
     else{
-        for(i = a; i <= b; i++){
-            if(i % 3 == 0){
-                cont++;
-            }
-        }
+        cont = somatorio(a, b);
     }
-    printf("Quantidade de numeros divisíveis por 3 entre %d e %d: %d\n", a, b, cont);
+    printf("Quantidade de números divisíveis por 3 entre %d e %d: %d\n", a, b, cont);
     return 0;
 }

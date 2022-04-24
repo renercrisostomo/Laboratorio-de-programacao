@@ -5,6 +5,16 @@ especificada pelo usuário. O programa deve funcionar tanto para A > B quanto pa
 */
 #include <stdio.h>
 
+int somatorio(int inicio, int fim){
+    int soma = 0, i;
+    for(i = inicio; i <= fim; i++){
+        if(i % 2 == 0){
+            soma += i;
+        }
+    }
+    return soma;
+}
+
 int main(){
     int a, b, i, soma = 0;
     printf("Digite o valor de A: ");
@@ -12,18 +22,10 @@ int main(){
     printf("Digite o valor de B: ");
     scanf("%d", &b);
     if(a > b){
-        for(i = b; i <= a; i++){
-            if(i % 2 == 0){
-                soma += i;
-            }
-        }
+        soma = somatorio(b, a);
     }
     else{
-        for(i = a; i <= b; i++){
-            if(i % 2 == 0){
-                soma += i;
-            }
-        }
+        soma = somatorio(a, b);
     }
     printf("Soma dos numeros pares entre %d e %d: %d\n", a, b, soma);
     return 0;
