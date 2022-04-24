@@ -1,6 +1,4 @@
-# Desafios
-
-**Desafio 1**
+# Desafio 1
 
 Imagine que você foi contratado para desenvolver um sistema para gerenciar os armários de alunos de
 uma universidade. Inicialmente, você terá que fazer uma prova de conceito para 8 armários. Devido
