@@ -1,4 +1,4 @@
-#Lista 2
+# Lista 2
 
 **Questão 1**
 Implemente um programa que tenha como entrada um número (1-7) que corresponde a um dos dias
