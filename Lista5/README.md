@@ -2,8 +2,7 @@
 
 ## Questão 1
 
-Escreva um programa que receba dois valores por linha de execução e realize a soma ou multi-
-plicação, conforme um código de operação também recebido por linha de execução.
+Escreva um programa que receba dois valores por linha de execução e realize a soma ou multiplicação, conforme um código de operação também recebido por linha de execução.
 
 ## Questão 2
 
