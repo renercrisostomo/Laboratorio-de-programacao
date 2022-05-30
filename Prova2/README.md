@@ -3,7 +3,7 @@
 ## QUESTÃO 1
 
 Escreva um programa em C que dado um vetor de inteiros A com dimensão k, armazene em B os
-elementos pares de A. Os valor de k deve ser fornecido por linha de comando (argc e argv). Se A não
+elementos pares de A. Os valor de k deve ser fornecido por linha de comando (`argc` e `argv`). Se A não
 tiver valor par, uma mensagem deve ser exibida.
 
 ## QUESTÃO 2
