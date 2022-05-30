@@ -17,7 +17,8 @@ int main(){
         }
         printf("Digite um valor: ");
         scanf("%d", &a);
+        printf("O menor valor e: %d\n", *p);
     }
-    printf("O menor valor e: %d\n", *p);
+    printf("Fim do programa\n");
     return 0;
 }

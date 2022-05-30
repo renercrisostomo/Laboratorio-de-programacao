@@ -8,14 +8,14 @@ também o endereço de memória onde o valor resultante dessa soma está armazen
 #include <stdio.h>
 
 int main () {
-    int a, b, *p;
-    p = &a;
+    int a, b, *pa;
+    pa = &a;
     printf("Digite o primeiro valor: ");
     scanf("%d", &a);
     printf("Digite o segundo valor: ");
     scanf("%d", &b);
-    *p = a + b;
-    printf("O valor da soma e: %d\n", *p);
-    printf("O endereco de memoria do valor da soma e: %p\n", p);
+    *pa = a + b;
+    printf("O valor da soma e: %d\n", *pa);
+    printf("O endereco de memoria do valor da soma e: %p\n", pa);
     return 0;
 }
