@@ -37,4 +37,4 @@ Explique uniões em C.
 
 ## Observações
 
-**Os códigos devem ser construídos com uso do typedef.**
+**Os códigos devem ser construídos com uso do `typedef`.**
